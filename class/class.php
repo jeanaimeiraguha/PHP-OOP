@@ -1,13 +1,15 @@
 <?php
 
-class member{
+class Fruits{
     // Objects
     public $name;
-    public $age;
+    public $type;
     //Method
-    fuction Set_n($name){
-
-    }
+    function set_name($name){
+        $this->name= $name;   
+     }
+    
 }
-
+$Mango =new Fruits();
+$Mango->set_name("Mango");
 ?>

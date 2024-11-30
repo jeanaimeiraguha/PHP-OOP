@@ -19,14 +19,26 @@ $Mango =new Fruits();
 $type->set_type("type1");
 $Mango->set_name("Mango");
 */
-class Car{
+
+class Car {
     public $brand;
     public $color;
-    //constructor
-    public  function _construct($brand,$color){
-        $this->brand=$brand; 
-        $this->color=$color; 
-       }
+
+    // Constructor
+    public function __construct($brand, $color) {
+        $this->brand = $brand;
+        $this->color = $color;
+    }
+
+    // Method
+    public function drive() {
+        return "The $this->color $this->brand is driving.";
+    }
 }
+
+// Create an object
+$myCar = new Car("Toyota", "red");
+echo $myCar->drive();
+?>
 
 ?>

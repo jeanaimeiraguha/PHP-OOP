@@ -19,7 +19,7 @@ $Mango =new Fruits();
 $type->set_type("type1");
 $Mango->set_name("Mango");
 */
-
+/*
 class Car {
     public $brand;
     public $color;
@@ -39,6 +39,23 @@ class Car {
 // Create an object
 $myCar = new Car("Toyota", "red");
 echo $myCar->drive();
+*/
+class Car{
+    public $name;
+    public $type;
+    public $driver;
+    public $color;
+    public function __construct($name,$type,$color,$driver){
+        $this->name=$name; 
+        $this->type=$type; 
+        $this->color=$color; 
+        echo $name."Is diven by".$driver;
+        //$this->"color is/
+    } 
+    
+}
+$Doo= new Car("Toyota","23k" ,"Red", "Kty");
+//pcho $name;
 ?>
 
-?>
+
